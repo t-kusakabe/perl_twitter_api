@@ -1,7 +1,6 @@
 use strict;
 use warnings;
 use utf8;
-use Encode;
 use Net::Twitter::Lite::WithAPIv1_1;
 use YAML::Tiny;
 
@@ -20,8 +19,5 @@ my $nt = Net::Twitter::Lite::WithAPIv1_1->new(
 
 
 eval {
-  $nt->update('わふーaaa');
+  $nt->update('わふー');
 };
-die $@ if $@;
-
-exit;
